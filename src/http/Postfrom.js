@@ -19,7 +19,7 @@ class Postfrom extends Component {
   submitHandler=e=>{
     e.preventDefault()
     console.log(this.state)
-    axios.post('https://jsonplaceholder.typicode.com/posts')
+    axios.post('https://jsonplaceholder.typicode.com/posts',this.state)
     .then(response => {
       console.log(response)
     })
